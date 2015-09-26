@@ -8,22 +8,22 @@
           </block>
         </value>
         <next>
-          <block type="movement_left" id="328">
-            <next>
-              <block type="robot_delay" id="262" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="278">
-                    <field name="NUM">2600</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_stop" id="235"></block>
-                </next>
-              </block>
-            </next>
-          </block>
+          <block type="movement_left" id="328"></block>
         </next>
       </block>
     </next>
+  </block>
+  <block type="robot_delay" id="262" inline="true" x="-552" y="190">
+    <value name="DELAY">
+      <block type="math_number" id="278">
+        <field name="NUM">2600</field>
+      </block>
+    </value>
+    <next>
+      <block type="movement_stop" id="235"></block>
+    </next>
+  </block>
+  <block type="controls_whileUntil" id="380" inline="false" x="-272" y="235">
+    <field name="MODE">UNTIL</field>
   </block>
 </xml>
